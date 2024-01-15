@@ -1,0 +1,155 @@
+<html>
+<script>
+
+function f1(){
+document.bgColor="#222";
+document.fgColor="#f2f2f2";
+}
+
+function f2(){
+document.bgColor="#f2f2f2";
+document.fgColor="black";
+}
+
+</script>
+<head>
+<title>Shop Now</title>
+    <style>
+body{
+margin:0px;
+font-family:arial;
+back-ground:#f2f2f2;
+}
+::-webkit-scrollbar{
+width:10px;
+}
+::-webkit-scrollbar-track{
+background:#f2f2f2;
+}
+::-webkit-scrollbar-thumb{
+background:linear-gradient(#666,#333);
+border-radius:10px;
+}
+h3{
+text-align:center;
+font-size:30px;
+margin:0;
+padding-top:10px;
+}
+.gallery{
+display:flex;
+flex-wrap:wrap;
+width:100%;
+justify-content:center;
+align-items:center;
+margin:35px 0;
+}
+.content{
+width:20%;
+margin:15px;
+box-sizing:border-box;
+float:0;
+text-align:center;
+border-radius:20px;
+cursor:pointer;
+padding-top:10px;
+box-shadow:0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+transition:.4s;
+background:#fff;
+}
+.content:hover{
+box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+transform:translate(0px, -8px);
+}
+
+img{
+width:200px;
+height:200px;
+text-align:center;
+margin:0 auto;
+display:block;
+}
+h2{
+color:black;
+}
+h5{
+color:red;
+}
+
+p.c1{
+font-size:18pt;
+}
+p.c2{
+font-size:15pt;
+}
+
+p.c3{
+font-size:12pt;
+color:#f2f2f2;
+}
+button{
+font-size:12pt;
+color:#f2f2f2;
+border-radius:10px;
+padding:5px;
+margin:15px;
+box-sizing:border-box;
+float:left;
+text-align:center;
+cursor:pointer;
+padding-top:10px;
+box-shadow:0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+transition:.4s;
+background:#333;
+}
+button:hover{
+box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+transform:translate(0px, -8px);
+}
+
+footer{
+background-color:#333;
+color:#f2f2f2;
+text-align:center;
+padding:10px;
+ }
+
+    </style>
+    <body>
+        <footer>
+  <p class="c1">Choose What Type You Like</p>
+        </footer>
+
+       <p align="left"><a href="#" onclick="history.go(-1);" target="f3">
+        <button>Back</button></a></p>
+
+
+            <div class="gallery">
+		           <div class="content"><a href="men%20watches/es_jc_men.html">
+			            <img src="wristwatch_7275093.png"></a>
+			            <h2>Men Watches</h2>
+		           </div>
+
+		           <div class="content"><a href="women%20watches/es_jc_women.html">
+			            <img src="watch_13443245.png"></a>
+			            <h2>Women Watches</h2>
+		           </div>
+
+		           <div class="content"><a href="Accessories_Jc_Es/es_jc_Accessories.html">
+			            <img src="bracelet_9055491.png"></a>
+			            <h2>Accessories</h2>
+		           </div>
+		    </div>
+		    <br>
+		    <br>
+		    <br>
+
+   <footer>
+        <p>&copy; 2024 Watches & Jewelry Store &reg;</p>
+   </footer>
+     <p class="c2">Choose Background Color :</P>
+	<input type="radio" name="r1" onclick="f1()">dark
+    <input type="radio" name="r1" onclick="f2()">light
+
+</body>
+</html>

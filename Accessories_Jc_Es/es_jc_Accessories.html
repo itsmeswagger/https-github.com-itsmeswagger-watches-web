@@ -1,0 +1,149 @@
+<html>
+<script>
+
+function f1(){
+document.bgColor="#222";
+document.fgColor="#f2f2f2";
+}
+
+function f2(){
+document.bgColor="#f2f2f2";
+document.fgColor="black";
+}
+
+</script>
+<head>
+<title>Accessories</title>
+    <style>
+body{
+margin:0px;
+font-family:arial;
+back-ground:#f2f2f2;
+}
+::-webkit-scrollbar{
+width:10px;
+}
+::-webkit-scrollbar-track{
+background:#f2f2f2;
+}
+::-webkit-scrollbar-thumb{
+background:linear-gradient(#666,#333);
+border-radius:10px;
+}
+h3{
+text-align:center;
+font-size:30px;
+margin:0;
+padding-top:10px;
+}
+.gallery{
+display:flex;
+flex-wrap:wrap;
+width:100%;
+justify-content:center;
+align-items:center;
+margin:35px 0;
+}
+.content{
+width:20%;
+margin:15px;
+box-sizing:border-box;
+float:left;
+text-align:center;
+border-radius:20px;
+cursor:pointer;
+padding-top:10px;
+box-shadow:0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+transition:.4s;
+background:#fff;
+}
+.content:hover{
+box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+transform:translate(0px, -8px);
+}
+
+img{
+width:175px;
+height:200px;
+text-align:center;
+margin:0 auto;
+display:block;
+}
+h2{
+color:black;
+}
+h5{
+color:red;
+}
+
+p.c1{
+font-size:18pt;
+}
+p.c2{
+font-size:15pt;
+}
+
+p.c3{
+font-size:12pt;
+color:#f2f2f2;
+}
+
+footer{
+background-color:#333;
+color:#f2f2f2;
+text-align:center;
+padding:10px;
+ }
+
+button{
+font-size:12pt;
+color:#f2f2f2;
+padding:5px;
+margin:15px;
+box-sizing:border-box;
+float:left;
+text-align:center;
+border-radius:20px;
+cursor:pointer;
+padding-top:10px;
+box-shadow:0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+transition:.4s;
+background:#333;
+}
+
+button:hover{
+box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+transform:translate(0px, -8px);
+}
+    </style>
+    <body>
+        <footer>
+	        <p class="c1">Choose What Type You Like</p>
+        </footer>
+
+       <p align="left"><a href="#" onclick="history.go(-1);" target="f3">
+        <button>Back</button></a></p>
+
+
+            <div class="gallery">
+		           <div class="content"><a href="jewelry%201/ES_accessories.html">
+			            <img src="Esprit-logo.png"></a>
+			            <h2>Esprit</h2>
+		           </div>
+
+		           <div class="content"><a href="jc_jewelry/jc_acc.html">
+			            <img src="Just-Cavalli-logo.png"></a>
+			            <h2>Just Cavalli</h2>
+		           </div>
+		    </div>
+
+
+   <footer>
+        <p>&copy; 2024 Watches & Jewelry Store &reg;</p>
+   </footer>
+     <p class="c2">Choose Background Color :</P>
+	<input type="radio" name="r1" onclick="f1()">dark
+    <input type="radio" name="r1" onclick="f2()">light
+
+</body>
+</html>

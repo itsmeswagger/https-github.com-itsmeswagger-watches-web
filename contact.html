@@ -1,0 +1,218 @@
+<html>
+<script>
+
+function f1(){
+document.bgColor="#222";
+document.fgColor="#f2f2f2";
+}
+
+function f2(){
+document.bgColor="#f2f2f2";
+document.fgColor="black";
+}
+
+</script>
+<head>
+<title>Contact Us</title>
+    <style>
+body{
+margin:0px;
+font-family:arial;
+back-ground:#f2f2f2;
+}
+::-webkit-scrollbar{
+width:10px;
+}
+::-webkit-scrollbar-track{
+background:#f2f2f2;
+}
+::-webkit-scrollbar-thumb{
+background:linear-gradient(#666,#333);
+border-radius:10px;
+}
+h3{
+text-align:center;
+font-size:30px;
+margin:0;
+padding-top:10px;
+}
+.gallery{
+display:flex;
+flex-wrap:wrap;
+width:100%;
+justify-content:center;
+align-items:center;
+margin:35px 0;
+}
+.content{
+width:20%;
+margin:15px;
+box-sizing:border-box;
+float:left;
+text-align:center;
+border-radius:20px;
+cursor:pointer;
+padding-top:10px;
+box-shadow:0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+transition:.4s;
+background:#fff;
+}
+.content:hover{
+box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+transform:translate(0px, -8px);
+}
+
+img{
+width:175px;
+height:200px;
+text-align:center;
+margin:0 auto;
+display:block;
+}
+h2{
+color:black;
+}
+h5{
+color:red;
+}
+
+p.c1{
+font-size:18pt;
+}
+p.c2{
+font-size:15pt;
+}
+
+p.c3{
+font-size:12pt;
+color:#f2f2f2;
+}
+
+footer{
+background-color:#333;
+color:#f2f2f2;
+text-align:center;
+padding:10px;
+ }
+button{
+font-size:12pt;
+color:#f2f2f2;
+border-radius:10px;
+padding:5px;
+margin:15px;
+box-sizing:border-box;
+float:0;
+text-align:center;
+border-radius:20px;
+cursor:pointer;
+padding-top:10px;
+box-shadow:0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+transition:.4s;
+background:#333;
+}
+button:hover{
+box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+transform:translate(0px, -8px);
+}
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+}
+.cotact-container{
+height:100vh;
+display:flex;
+align-item:center;
+justify-content:space-evenly;
+}
+.contact-left{
+display:flex;
+flex-direction:column;
+align-item:start;
+gap:20px;
+}
+.contact-left-title h2{
+font-weight:600;
+color:#333;
+font-size:40px;
+margin-bottom:5px;
+}
+.contact-left-title hr{
+border:none;
+width:300px;
+height:5px;
+background-color:#333;
+border-radius:15px;
+margin-bottom:20px;
+padding-left:25px;
+font-weight:500;
+color:666
+border-radius:50px;
+
+}
+.contact-inputs{
+width:400px;
+height:50px;
+border:auto;
+outline:5px;
+padding:25px;
+font-weight:500;
+color#666;
+border-radius:25px;
+}
+.contact-left textarea{
+height:140px;
+padding:15px;
+border-radius:20px;
+    </style>
+    <body><a name="b1">
+        <footer>
+  <p class="c1">Contact Us</p>
+        </footer>
+       <p align="left"><a href="#" onclick="history.go(-1);" target="f3">
+        <button>Back</button></a></p>
+
+        <div class="contact-container">
+<form name="sec1" method="post" action="mailto:mohammadlogod1@gmail.com" class="contact-left">
+   <div  class="contact-left-title">
+   <h2>Get in touch</h2>
+   <hr>
+   </div>
+
+Gust name :
+  <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+
+ E-Mail :
+  <input type="text" name="E-mail" placeholder="Your E-mail" class="contact-inputs" required>
+
+
+ Notes :
+  <textarea name="massage" placeholder="Your massage" class="contact-inputs" cols="36" rows="6" wrap="physical" required>write your notes here</textarea>
+
+Payment Method :<center>
+  <p align="left"><button ><input type="checkbox" name="ca" value="yes">Cash</button></p>
+  <p align="left"><button><input type="checkbox" name="ch" value="yes">Cheque</button></p>
+  <p align="left"><button><input type="checkbox" name="vi" value="yes">Visa</button></p>
+  <br>
+  <br>
+  <button type="submit" name="b1">send</button>
+  <button type="reset" name="b2">clear</button></center>
+
+  </form>
+</div>
+
+<br>
+<br>
+
+
+    <p align="center"><a href="#b1"><button style="font-size:12pt; background:#333; color:#f2f2f2; border-radius:10px; padding:5px;">Back on top
+    </button></a></p>
+	   <footer>
+	        <p>&copy; 2024 Watches & Jewelry Store &reg;</p>
+	   </footer>
+	     <p class="c2">Choose Background Color :</P>
+		<input type="radio" name="r1" onclick="f1()">dark
+	    <input type="radio" name="r1" onclick="f2()">light
+
+	</body>
+</html>
